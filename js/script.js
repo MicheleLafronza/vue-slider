@@ -43,7 +43,7 @@ createApp({
                         text: 'Go dimension-hopping with Ratchet and Clank as they take on an evil emperor from another reality.',
                     }, {
                         image: 'img/03.webp',
-                        title: 'Ratchet & Clank: Rift Apart',
+                        title: 'Fortnite',
                         text: "Grab all of your friends and drop into Epic Games Fortnite, a massive 100 - player face - off that combines looting, crafting, shootouts and chaos.",
                     }, {
                         image: 'img/04.webp',
