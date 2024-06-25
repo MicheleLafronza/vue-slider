@@ -59,13 +59,14 @@ createApp({
     }
   },
   methods: {
-    // al click su next cambia l'immagine
+    // al click su next cambia l'immagine cambia sulla successiva
     nextImage() {
         this.activeItem++;
         if (this.activeItem > this.slides.length - 1) {
             this.activeItem = 0;
         }
     },
+    // al click su prev l'immagine cambia sulla precedente
     prevImage() {
         this.activeItem--;
         if (this.activeItem < 0) {
