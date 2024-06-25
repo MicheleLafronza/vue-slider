@@ -44,10 +44,15 @@ createApp({
     // al click su next cambia l'immagine
     nextImage() {
         this.activeItem++;
-        if (this.activeItem < this.slides.image.lenght - 1) {
-            this.activeItem = 0
+        if (this.activeItem > this.slides.image.length - 1) {
+            this.activeItem = 0;
         }
-        console.log(this.slides.image.lenght);
+    },
+    prevImage() {
+        this.activeItem--;
+        if (this.activeItem < 0) {
+            this.activeItem = this.slides.image.length - 1;
+        }
     }
   }
 // monto tutto sull'elemento
