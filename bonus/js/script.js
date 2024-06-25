@@ -85,5 +85,6 @@ createApp({
   mounted() {
     this.autoPlay();
 }
+
 // monto tutto sull'elemento
 }).mount('#app')
