@@ -72,6 +72,10 @@ createApp({
         if (this.activeItem < 0) {
             this.activeItem = this.slides.length - 1;
         }
+    },
+    // al click sull'immagine la seleziono sullo schermo
+    selectImage(index) {
+        this.activeItem = index;
     }
   }
 // monto tutto sull'elemento

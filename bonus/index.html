@@ -31,7 +31,7 @@
                 <div class="thumbs">
                     <div class="prev" @click="prevImage"></div>
                     <div class="next" @click="nextImage"></div>
-                    <div class="thumb" :class="activeItem === index ? 'active' : '' " v-for="(item, index) in slides">
+                    <div class="thumb" :class="activeItem === index ? 'active' : '' " v-on:click="selectImage(index)" v-for="(item, index) in slides" :key="index" >
                         <img :src="item.image" :alt="item.title" />
                     </div>
                 </div>
