@@ -19,11 +19,11 @@
             <div class="slider-wrapper" tabindex="0">
 
                 <div class="item">
-                    <img :src="slides.image[activeItem]" alt="Spiderman" />
+                    <img :src="slides[activeItem].image" alt="Spiderman" />
                     <div class="text">
-                        <h3>{{slides.title[activeItem]}}</h3>
+                        <h3>{{slides[activeItem].title}}</h3>
                         <p>
-                            {{slides.text[activeItem]}}
+                            {{slides[activeItem].text}}
                         </p>
                     </div>
                 </div>
@@ -31,10 +31,10 @@
                 <div class="thumbs">
                     <div class="prev" @click="prevImage"></div>
                     <div class="next" @click="nextImage"></div>
-                    <div class="thumb active">
-                        <img src="img/01.webp" alt="Svezia" />
+                    <div class="thumb" v-for="(image, index) in slides.image">
+                        <img :src="slides.image[index]" alt="Svezia" />
                     </div>
-                    <div class="thumb">
+                    <!-- <div class="thumb">
                         <img src="img/02.webp" alt="Ratchet & Clank" />
                     </div>
                     <div class="thumb">
@@ -45,7 +45,7 @@
                     </div>
                     <div class="thumb">
                         <img src="img/05.webp" alt="Avengers" />
-                    </div>
+                    </div> -->
                 </div>
 
             </div>
