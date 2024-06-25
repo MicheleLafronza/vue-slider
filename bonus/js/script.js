@@ -76,7 +76,14 @@ createApp({
     // al click sull'immagine la seleziono sullo schermo
     selectImage(index) {
         this.activeItem = index;
+    },
+    // Avvia l'autoplay che cambia l'immagine ogni volta che passano 3 secondi
+    autoPlay() {
+        setInterval(this.nextImage, 3000);
     }
-  }
+  },
+  mounted() {
+    this.autoPlay();
+}
 // monto tutto sull'elemento
 }).mount('#app')
